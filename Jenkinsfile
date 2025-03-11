@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'g++ PES1UG22CS148-1.cpp -o YOUR_SRN-1'
+                sh 'g++ PES1UG22CS148-1.cpp -o PES1UG22CS148-1'
             }
         }
         stage('Test') {
             steps {
-                sh './YOUR_SRN-1'
+                sh './PES1UG22CS148-1'
             }
         }
         stage('Deploy') {
